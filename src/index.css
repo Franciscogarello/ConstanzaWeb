@@ -560,7 +560,12 @@ a {
 }
 
 .contact-section h2 span {
-  color: #6b5400;
+  color: #08090b;
+
+  text-decoration-line: underline;
+  text-decoration-color: #08090b;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 10px;
 }
 
 .contact-description {
@@ -877,4 +882,28 @@ a {
     transform: none;
     transition: none;
   }
+  
+}
+/* BOTÓN AGENDAR SIEMPRE AMARILLO */
+
+.navbar .contact-button {
+  color: #08090b;
+  background-color: #fff13b;
+  border-color: #fff13b;
+}
+
+.navbar .contact-button:hover {
+  color: #08090b;
+  background-color: #fff13b;
+  border-color: #fff13b;
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 25px rgba(255, 241, 59, 0.2),
+    0 0 15px rgba(255, 241, 59, 0.12);
+}
+
+.navbar .contact-button:hover span {
+  transform: translate(3px, -3px);
 }

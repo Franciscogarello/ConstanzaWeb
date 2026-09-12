@@ -254,8 +254,8 @@ function App() {
   <p className="contact-label">Hablemos de tu proyecto</p>
 
   <h2>
-    ¿Querés dejar de improvisar
-    <span> con tu publicidad?</span>
+  ¿Querés dejar de improvisar{" "}
+  <span>con tu publicidad?</span>
   </h2>
 
   <p className="contact-description">
