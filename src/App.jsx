@@ -72,12 +72,25 @@ function App() {
         </a>
 
         <div className="nav-links">
-          <a href="#metodo">Cómo trabajo</a>
+          <a href="#metodo" className="nav-link">
+            Cómo trabajo
+          </a>
 
-          <a href="#servicios">Servicios</a>
+          <a href="#servicios" className="nav-link">
+            Servicios
+          </a>
 
-          <a href="#contacto" className="contact-button">
-            Contacto ↗
+          <a
+            href="https://wa.me/5493425140309?text=Hola%20Constanza%2C%20quiero%20agendar%20una%20reuni%C3%B3n."
+            target="_blank"
+            rel="noreferrer"
+            className="contact-button"
+          >
+            Agendar reunión <span>↗</span>
+          </a>
+
+          <a href="#contacto" className="nav-link">
+            Contacto
           </a>
         </div>
       </nav>

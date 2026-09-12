@@ -44,7 +44,7 @@ a {
 }
 
 .logo span {
-  color: #b8ff38;
+  color: #fff13b;
 }
 
 .nav-links {
@@ -56,20 +56,78 @@ a {
   font-size: 15px;
 }
 
+
+/* ENLACES SIMPLES DEL MENÚ */
+
+.nav-link {
+  padding: 8px 0;
+  position: relative;
+
+  transition: color 0.3s;
+}
+
+.nav-link::after {
+  content: "";
+
+  width: 100%;
+  height: 2px;
+
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  background-color: #fff13b;
+
+  transform: scaleX(0);
+  transform-origin: right;
+
+  transition: transform 0.3s;
+}
+
+.nav-link:hover {
+  color: #fff13b;
+}
+
+.nav-link:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+
+/* BOTÓN AGENDAR REUNIÓN */
+
 .contact-button {
   padding: 11px 18px;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 
   color: #f4f2ed;
   border: 1px solid #34373d;
   border-radius: 50px;
 
-  transition: 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    border-color 0.3s,
+    transform 0.3s;
+}
+
+.contact-button span {
+  transition: transform 0.3s;
 }
 
 .contact-button:hover {
   color: #08090b;
-  background-color: #b8ff38;
-  border-color: #b8ff38;
+  background-color: #fff13b;
+  border-color: #fff13b;
+
+  transform: translateY(-2px);
+}
+
+.contact-button:hover span {
+  transform: translate(2px, -2px);
 }
 
 
@@ -104,7 +162,8 @@ a {
 .hero-label span {
   width: 28px;
   height: 1px;
-  background-color: #b8ff38;
+
+  background-color: #fff13b;
 }
 
 .hero h1 {
@@ -166,6 +225,15 @@ a {
   border-top: 1px solid #292c31;
 }
 
+.section-label {
+  margin: 0;
+
+  color: #a5a8ad;
+  font-size: 13px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
 .work-title {
   max-width: 900px;
   margin: 35px 0 80px;
@@ -177,7 +245,7 @@ a {
 }
 
 .work-title span {
-  color: #b8ff38;
+  color: #fff13b;
 }
 
 .work-content {
@@ -207,7 +275,7 @@ a {
 
   color: #f4f2ed;
   background-color: #111317;
-  border-left: 3px solid #b8ff38;
+  border-left: 3px solid #fff13b;
   border-radius: 0 20px 20px 0;
 
   font-size: 20px;
@@ -238,7 +306,7 @@ a {
   justify-content: center;
 
   color: #08090b;
-  background-color: #b8ff38;
+  background-color: #fff13b;
   border-radius: 50%;
 
   font-size: 15px;
@@ -289,7 +357,7 @@ a {
 }
 
 .services-heading h2 span {
-  color: #b8ff38;
+  color: #fff13b;
 }
 
 .services-grid {
@@ -317,13 +385,13 @@ a {
 
 .service-option:hover {
   transform: translateY(-8px);
-  border-color: #b8ff38;
+  border-color: #fff13b;
 }
 
 .service-featured {
   color: #08090b;
-  background-color: #b8ff38;
-  border-color: #b8ff38;
+  background-color: #fff13b;
+  border-color: #fff13b;
 }
 
 .service-featured:hover {
@@ -333,7 +401,7 @@ a {
 .service-category {
   margin: 0 0 30px;
 
-  color: #b8ff38;
+  color: #fff13b;
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 2px;
@@ -341,7 +409,7 @@ a {
 }
 
 .service-featured .service-category {
-  color: #394b13;
+  color: #5c4800;
 }
 
 .service-option h3 {
@@ -363,7 +431,7 @@ a {
 }
 
 .service-featured > p:not(.service-category) {
-  color: #26300f;
+  color: #332900;
 }
 
 .service-option .service-description {
@@ -377,6 +445,7 @@ a {
 
 .service-option .service-focus {
   padding-top: 24px;
+
   border-top: 1px solid #34373d;
 }
 
@@ -399,19 +468,24 @@ a {
   gap: 15px;
 
   color: #08090b;
-  background-color: #b8ff38;
-  border: 1px solid #b8ff38;
+  background-color: #fff13b;
+  border: 1px solid #fff13b;
   border-radius: 50px;
 
   font-size: 15px;
   font-weight: 700;
 
-  transition: 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    transform 0.3s;
 }
 
 .service-button:hover {
-  color: #b8ff38;
+  color: #fff13b;
   background-color: transparent;
+
+  transform: translateY(-3px);
 }
 
 .service-featured .service-button {
@@ -424,6 +498,8 @@ a {
   color: #08090b;
   background-color: transparent;
 }
+
+
 /* =========================
    CONTACTO
 ========================= */
@@ -439,7 +515,7 @@ a {
   justify-content: center;
 
   color: #08090b;
-  background-color: #b8ff38;
+  background-color: #fff13b;
   border-radius: 32px;
 
   position: relative;
@@ -484,7 +560,7 @@ a {
 }
 
 .contact-section h2 span {
-  color: #455d16;
+  color: #6b5400;
 }
 
 .contact-description {
@@ -523,7 +599,10 @@ a {
   font-size: 15px;
   font-weight: 700;
 
-  transition: 0.3s;
+  transition:
+    color 0.3s,
+    background-color 0.3s,
+    transform 0.3s;
 }
 
 .contact-primary {
@@ -534,6 +613,8 @@ a {
 .contact-primary:hover {
   color: #08090b;
   background-color: transparent;
+
+  transform: translateY(-3px);
 }
 
 .contact-secondary {
@@ -544,6 +625,8 @@ a {
 .contact-secondary:hover {
   color: #f4f2ed;
   background-color: #08090b;
+
+  transform: translateY(-3px);
 }
 
 
@@ -571,12 +654,14 @@ a {
 }
 
 .footer > a:last-child {
-  transition: 0.3s;
+  transition: color 0.3s;
 }
 
 .footer > a:last-child:hover {
-  color: #b8ff38;
+  color: #fff13b;
 }
+
+
 /* =========================
    DISEÑO PARA CELULARES
 ========================= */
@@ -750,6 +835,8 @@ a {
     order: 3;
   }
 }
+
+
 /* =========================
    ANIMACIONES AL BAJAR
 ========================= */
